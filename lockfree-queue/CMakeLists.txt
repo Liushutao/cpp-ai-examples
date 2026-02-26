@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.14)
+project(lockfree_queue)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(benchmark benchmark.cpp)
+target_compile_options(benchmark PRIVATE -O3 -pthread)
