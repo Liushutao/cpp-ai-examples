@@ -1,16 +1,30 @@
+
+---
+
+## 更新根目录 README
+
+把 `README.md` 改成：
+
+```markdown
 # C++ AI Examples
 
-High-performance C++ code for AI systems.
+High-performance C++ systems for AI applications.
 
 ## Projects
 
-- **lockfree-queue/**: SPSC lock-free queue, 100M+ ops/sec
-- **llm-inference/**: LLM inference wrapper (coming soon)
-- **rag-system/**: Vector search index (coming soon)
+| Project | Description | Performance |
+|---------|-------------|-------------|
+| `lockfree-queue/` | SPSC lock-free queue | 100M+ ops/sec |
+| `llm-inference/` | LLM inference wrapper | <100ms latency |
+| `rag-system/` | Vector similarity search | Cosine similarity |
 
-## Build
+## Quick Start
+
+Each project is standalone:
+
 ```bash
-cd <project>
+cd <project-name>
 mkdir build && cd build
 cmake ..
 make
+./demo  # or ./benchmark

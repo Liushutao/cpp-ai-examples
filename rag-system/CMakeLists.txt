@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.14)
+project(rag_system)
+set(CMAKE_CXX_STANDARD 17)
+add_library(vector_index vector_index.cpp)
+add_executable(demo demo.cpp)
+target_link_libraries(demo vector_index)

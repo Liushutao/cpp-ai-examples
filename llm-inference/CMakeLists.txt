@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.14)
+project(llm_inference)
+set(CMAKE_CXX_STANDARD 17)
+add_library(llm_wrapper llm_wrapper.cpp)
+add_executable(demo demo.cpp)
+target_link_libraries(demo llm_wrapper)
